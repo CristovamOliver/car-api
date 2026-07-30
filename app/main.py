@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from presentation.routers import router
 
 main = FastAPI(
     title='Car API',
@@ -7,6 +8,4 @@ main = FastAPI(
 )
 
 
-@main.get('/')
-def read_root():
-    return {'status': 'ok'}
+main.include_router(router)
