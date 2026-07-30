@@ -1,9 +1,9 @@
 [project]
-name = "Fast Car API"
+name = "Car API"
 version = "0.1.0"
 description = ""
 authors = [
-    {name = "PycodeBR",email = "pycodebr@gmail.com"}
+       {name = "Lucas", email = "contato.lucas55@gmail.com"}
 ]
 
 [tool.ruff]
@@ -22,5 +22,5 @@ quote-style = 'single'
 lint = 'ruff check'
 lint_fix = 'ruff check --fix'
 format = 'ruff format'
-run = 'fastapi dev fast_car_api/app.py'
+run = 'fastapi dev ./main.py'
 docs = 'mkdocs serve -a 127.0.0.1:8001'
